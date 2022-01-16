@@ -1,0 +1,21 @@
+{
+  "name": "webdriverio",
+  "version": "1.0.0",
+  "description": "jenningsbet test in webdriverio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vignesh thangaraj",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^7.16.13",
+    "@wdio/cli": "^7.16.13",
+    "@wdio/cucumber-framework": "^7.16.13",
+    "@wdio/local-runner": "^7.16.13",
+    "@wdio/spec-reporter": "^7.16.13",
+    "chromedriver": "^97.0.0",
+    "wdio-chromedriver-service": "^7.2.6",
+    "webdriverio": "^7.16.13"
+  }
+}
