@@ -70,7 +70,7 @@ const betSlipPage = require('../pageobjects/betslip.page');
     Then(/^Verify potential return value with formula$/,async (table) => {
         let getFractionDetailsinBetSlip = await betSlipPage.getFractionPriceDetails() 
         let fraction = getFractionDetailsinBetSlip.split('/')
-        let totalReturnsExpected = Math.round(((parseInt(fraction[0])/parseInt(fraction[0])) + 1) * parseInt(table.rows()[0][1]))
+        let totalReturnsExpected = Math.round(((parseInt(fraction[0])/parseInt(fraction[1])) + 1) * parseInt(table.rows()[0][1]))
         let totalReturnsAcutal = await betSlipPage.getTotalReturnsUpdted()
         expect(await totalReturnsAcutal.getText()).to.equal(totalReturnsExpected)
     });
